@@ -25,7 +25,8 @@
   - **Commits:** `git rev-list --count HEAD` na branch `quattro` deu 8.179.
   - **Primeiro commit:** 01/06/2025, de DHH ("Initial basics").
   - **PRs:** 2.404 mergeados de 10.448 abertos, pela busca `is:pr is:merged` da API do GitHub. Commits enviados direto na branch, sem PR, não entram nessa conta.
-  - **Ritmo recente:** 769 PRs mergeados entre 22/10 e 21/11/2026, cerca de 26 por dia.
+  - **Ritmo recente (no slide):** 2.637 commits entre 22/07 e 22/11/2026 (123 dias), cerca de 21 por dia. No mesmo período foram 1.520 PRs mergeados, cerca de 12 por dia.
+  - **Últimos 30 dias:** 769 PRs mergeados, cerca de 26 por dia.
   - **Autores:** 671 e-mails distintos, o que é uma aproximação do número de pessoas.
   - **Versões:** datas das tags v1.1.0 (04/07/2025), v2.0.0 (25/08/2025), v3.0.0 (17/09/2025), v4.0.0 (14/08/2026) e v4.5.0 (04/11/2026).
 - **DHH sobre o Omarchy:** paráfrase. No Lex Fridman Podcast #501 (26/08/2026) ele disse que agentes escreveram praticamente todo o código do Omarchy Quattro: "in the last two months it has been 100%". Fonte secundária: Startup Fortune. No post da DigitalOcean (set/2026) ele fala em "agent runners for PR reviews" no pipeline do Omarchy.

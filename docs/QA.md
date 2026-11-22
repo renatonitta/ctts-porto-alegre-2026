@@ -19,5 +19,5 @@
 - **Tobi Lütke:** paráfrase. O termo *slop grenades* vem do The Knowledge Project (Shane Parrish), set/2026, e saiu em várias matérias. Sobre o River: artigo [Learning on the Shop floor](https://x.com/tobi/status/2053121182044451016) (X, mai/2026). Os números do River (1.870 PRs/semana, ~1 em 8 PRs) **não aparecem na tela**, porque só foram vistos por fontes secundárias.
 - **DHH, keynote:** paráfrase ("se declarou aposentado da programação profissional; código à mão virou exceção na 37signals"). [Keynote Rails World 2026](https://www.youtube.com/watch?v=vDjW_dRyKXY), 23/09/2026. Conferir a fala exata no vídeo se for citar literalmente.
 - **"Very soon":** relato do palestrante sobre conversa presencial (pergunta de Obie Fernandez). Wording confirmado pelo palestrante. Identificado na tela como relato.
-- **60+ PRs / 2 dias / ≈30 por dia:** experimento próprio. Identificado como "não benchmark; volume não comprova qualidade".
+- **60+ PRs / 2 dias / ≈30 por dia:** experimento próprio. A ressalva "não benchmark; volume não comprova qualidade" fica nas notas do palestrante.
 - **Gráfico do slide 7:** ilustrativo, sem dados (indicado nas notas).

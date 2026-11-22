@@ -1,2 +1,2 @@
-# AI agents no processo de senvolvimento de software
-### Apresentação CTTS Porto Alegre 2026
+# Agentes de IA no processo de desenvolvimento de software
+### A qualidade e a velocidade

@@ -172,3 +172,17 @@ html, body { background: var(--bg); }
 .refs li { margin-bottom: 14px; }
 .refs a { color: var(--blue); text-decoration: none; border-bottom: 1px solid rgba(96,165,250,.35); }
 .refs .tag { font-family: var(--mono); font-size: 18px; color: var(--dim); }
+
+/* 04 — processo: etapas do código em destaque */
+.reveal .slides section.process { justify-content: flex-start; padding-top: 110px; }
+.process .flow { margin-top: 24px; gap: 12px; }
+.process .flow .step { font-size: 30px; padding: 18px 8px; border-radius: 14px; }
+.process .flow .arrow { font-size: 28px; }
+.process .zoom-link { height: 170px; margin: 0 auto; width: 100%; background:
+  linear-gradient(to bottom right, transparent calc(50% - 1px), rgba(74,222,128,.35) 50%, transparent calc(50% + 1px)) left / 50% 100% no-repeat,
+  linear-gradient(to bottom left, transparent calc(50% - 1px), rgba(74,222,128,.35) 50%, transparent calc(50% + 1px)) right / 50% 100% no-repeat;
+  opacity: .9; }
+.process .substeps { display: flex; flex-wrap: nowrap; align-items: center; gap: 12px; margin-top: 0; padding: 40px 28px; border: 2px solid var(--green); border-radius: 24px; background: rgba(74,222,128,.04); box-shadow: 0 30px 90px rgba(74,222,128,.08); }
+.process .sub { flex: 1 1 auto; text-align: center; font-size: 44px; font-weight: 600; padding: 48px 22px; border-radius: 16px; background: var(--bg-2); border: 1.5px solid var(--line); white-space: nowrap; }
+.process .sub.hl { border-color: var(--violet); color: var(--violet); box-shadow: 0 0 0 6px rgba(167,139,250,.14); }
+.process .substeps .arrow { color: var(--dim); font-size: 34px; }

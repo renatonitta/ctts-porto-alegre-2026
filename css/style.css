@@ -126,7 +126,7 @@ html, body { background: var(--bg); }
 .rw .asker { font-family: var(--mono); font-size: 30px; color: var(--muted); margin-top: 24px; }
 .rw .answer { font-size: 140px; font-weight: 600; letter-spacing: -0.03em; margin-top: 48px; line-height: 1; }
 .rw .answer-pt { font-size: 32px; color: var(--muted); margin-top: 14px; }
-.rw .photo { width: 100%; max-height: 860px; object-fit: cover; border-radius: 20px; box-shadow: 0 40px 100px rgba(0,0,0,.6); border: 1.5px solid var(--line); aspect-ratio: 3/4; }
+.rw .photo { width: 100%; max-height: 860px; object-fit: cover; border-radius: 20px; box-shadow: 0 40px 100px rgba(0,0,0,.6); border: 1.5px solid var(--line); aspect-ratio: auto; }
 .rw .cap { font-family: var(--mono); font-size: 20px; color: var(--muted); margin-top: 14px; }
 
 /* 09 — quem revisa */

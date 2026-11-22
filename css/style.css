@@ -44,7 +44,7 @@ html, body { background: var(--bg); }
 .center { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; height: 100%; }
 .center-all { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100%; }
 .note { font-size: 26px; color: var(--muted); }
-.source { position: absolute; left: 120px; bottom: 56px; font-family: var(--mono); font-size: 20px; color: var(--dim); }
+.source { position: absolute; left: 120px; bottom: 90px; font-family: var(--mono); font-size: 20px; color: var(--dim); }
 
 /* barra de progresso / número */
 .reveal .progress { height: 4px; color: var(--green); background: rgba(255,255,255,0.06); }

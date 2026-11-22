@@ -20,4 +20,4 @@
 - **DHH, keynote:** paráfrase ("se declarou aposentado da programação profissional; código à mão virou exceção na 37signals"). [Keynote Rails World 2026](https://www.youtube.com/watch?v=vDjW_dRyKXY), 23/09/2026. Conferir a fala exata no vídeo se for citar literalmente.
 - **"Very soon":** relato do palestrante sobre conversa presencial (pergunta de Obie Fernandez). Wording confirmado pelo palestrante. Identificado na tela como relato.
 - **60+ PRs / 2 dias / ≈30 por dia:** experimento próprio. Identificado como "não benchmark; volume não comprova qualidade".
-- **Gráfico do slide 7 e barras do slide 10:** ilustrativos, sem dados. No slide 10 isso está escrito na tela; no 7, só nas notas.
+- **Gráfico do slide 7:** ilustrativo, sem dados (indicado nas notas).

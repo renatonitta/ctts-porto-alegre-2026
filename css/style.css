@@ -131,7 +131,7 @@ html, body { background: var(--bg); }
 
 /* 09 — quem revisa */
 .tiers { display: flex; flex-direction: column; gap: 22px; margin-top: 56px; }
-.tier { display: grid; grid-template-columns: 90px 1fr 380px; align-items: center; gap: 28px; padding: 30px 36px; border-radius: 18px; background: var(--bg-2); border: 1.5px solid var(--line); }
+.tier { display: grid; grid-template-columns: 90px 1fr; align-items: center; gap: 28px; padding: 30px 36px; border-radius: 18px; background: var(--bg-2); border: 1.5px solid var(--line); }
 .tier .idx { font-family: var(--mono); font-size: 32px; color: var(--dim); }
 .tier .t { font-size: 46px; font-weight: 600; }
 .tier .d { font-size: 28px; color: var(--muted); }

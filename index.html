@@ -85,9 +85,26 @@
   </aside>
 </section>
 
-<!-- 05 — Qualidade não começa no code review (1:30) -->
+<!-- 05 — O que é um Pull Request? (1:30) -->
+<section class="pr" data-timing="90">
+  <div class="kicker"><span class="n">05</span> O que é um Pull Request?</div>
+  <p class="pr-def">Uma proposta de mudança no código — como um aditivo de contrato.</p>
+  <div class="pr-points">
+    <div class="pt b"><span class="ico">✎</span>Pedido de alterações</div>
+    <div class="pt v"><span class="ico">💬</span>Discussões</div>
+    <div class="pt a"><span class="ico">⇄</span>Convencimentos</div>
+    <div class="pt g"><span class="ico">✓</span>Validações</div>
+  </div>
+  <aside class="notes">
+    Explicar de forma acessível: um PR é uma proposta de atualização à base de código.
+    Envolve alterações, discussões, convencimento, testes e aprovação. Analogia: aditivo de contrato.
+    Mostrar o custo humano: alguém precisa ler, entender, questionar e aprovar cada mudança. (1:30)
+  </aside>
+</section>
+
+<!-- 06 — Qualidade não começa no code review (1:30) -->
 <section class="quality" data-timing="90">
-  <div class="kicker"><span class="n">05</span> Qualidade não começa no code review</div>
+  <div class="kicker"><span class="n">06</span> Qualidade não começa no code review</div>
   <h2>Código perfeito pode implementar <span class="a">a coisa errada.</span></h2>
   <div class="layers">
     <div class="layer fragment fade-up"><small>01</small>Boas definições</div>
@@ -102,36 +119,6 @@
     Vale para qualquer engenharia: se a especificação de uma arma vier com o cano virado para trás, o projeto pode ser executado com perfeição — e o produto não serve.
     Qualidade nasce de boas definições, boas práticas (metodologias e padrões validados), validação, testes automatizados e observação.
     A revisão é uma barreira importante, não a única. (1:30)
-  </aside>
-</section>
-
-<!-- 06 — O que é um Pull Request? (1:30) -->
-<section data-timing="90">
-  <div class="pr-grid">
-    <div>
-      <div class="kicker"><span class="n">06</span> O que é um Pull Request?</div>
-      <p class="eq">PR <span class="op">=</span><br><span class="b">proposta de mudança</span><br><span class="op">+</span> <span class="v">discussão</span><br><span class="op">+</span> <span class="g">validação</span></p>
-      <p class="analogy fragment fade-up">Como um <strong style="color:var(--fg)">aditivo de contrato</strong>: alguém propõe, as partes discutem, e só então assinam.</p>
-    </div>
-    <div class="pr-card fragment fade-left" role="img" aria-label="Exemplo ilustrativo de um pull request com diff, comentários, testes e aprovação">
-      <div class="hd"><span class="badge">aberto</span> Ajusta cálculo de frete</div>
-      <div class="diff">
-        <div class="ctx">  def frete(pedido)</div>
-        <div class="del">-   pedido.peso * 2</div>
-        <div class="add">+   pedido.peso * tabela.taxa</div>
-        <div class="ctx">  end</div>
-      </div>
-      <div class="row"><span class="dot" style="background:var(--violet)"></span> 💬 “E se a tabela estiver vazia?”</div>
-      <div class="row"><span class="dot" style="background:var(--blue)"></span> ↻ Alteração enviada</div>
-      <div class="row"><span class="dot" style="background:var(--green)"></span> ✓ CI: testes passaram</div>
-      <div class="row"><span class="dot" style="background:var(--green)"></span> ✓ Aprovado por 1 revisor</div>
-    </div>
-  </div>
-  <aside class="notes">
-    Explicar de forma acessível: um PR é uma proposta de atualização à base de código.
-    Envolve alterações, discussões, convencimento, testes e aprovação. Analogia: aditivo de contrato.
-    Mostrar o custo humano: alguém precisa ler, entender, questionar e aprovar cada mudança. (1:30)
-    (O card na tela é um exemplo ilustrativo.)
   </aside>
 </section>
 

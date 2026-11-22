@@ -186,3 +186,11 @@ html, body { background: var(--bg); }
 .process .sub { flex: 1 1 auto; text-align: center; font-size: 44px; font-weight: 600; padding: 48px 22px; border-radius: 16px; background: var(--bg-2); border: 1.5px solid var(--line); white-space: nowrap; }
 .process .sub.hl { border-color: var(--violet); color: var(--violet); box-shadow: 0 0 0 6px rgba(167,139,250,.14); }
 .process .substeps .arrow { color: var(--dim); font-size: 34px; }
+
+/* 05 — PR estático */
+.pr-def { font-size: 36px; color: var(--muted); margin-top: 8px; }
+.pr-points { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 64px; }
+.pr-points .pt { display: flex; align-items: center; gap: 32px; font-size: 64px; font-weight: 600; padding: 48px 44px; border-radius: 22px; background: var(--bg-2); border: 1.5px solid var(--line); border-left-width: 8px; }
+.pr-points .pt.b { border-left-color: var(--blue); } .pr-points .pt.v { border-left-color: var(--violet); }
+.pr-points .pt.a { border-left-color: var(--amber); } .pr-points .pt.g { border-left-color: var(--green); }
+.pr-points .ico { font-size: 52px; width: 64px; text-align: center; }

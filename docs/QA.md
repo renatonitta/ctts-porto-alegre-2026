@@ -21,4 +21,3 @@
 - **"Very soon":** relato do palestrante sobre conversa presencial (pergunta de Obie Fernandez). Wording confirmado pelo palestrante. Identificado na tela como relato.
 - **60+ PRs / 2 dias / ≈30 por dia:** experimento próprio. Identificado como "não benchmark; volume não comprova qualidade".
 - **Gráfico do slide 7 e barras do slide 10:** ilustrativos, sem dados. Isso está escrito na tela.
-- **Card de PR do slide 6:** exemplo fictício e ilustrativo.

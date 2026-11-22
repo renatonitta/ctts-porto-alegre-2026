@@ -202,3 +202,23 @@ html, body { background: var(--bg); }
 .quality .layers .layer.review { box-shadow: 0 0 0 6px rgba(167,139,250,.14); }
 
 .reveal .finale-credit { font-family: var(--mono); font-size: 28px; color: var(--muted); margin-top: 60px; }
+
+/* 12 — Omarchy */
+.reveal .slides section.omarchy { justify-content: flex-start; padding-top: 80px; }
+.omarchy .om-head h1 { font-size: 120px; }
+.omarchy .om-sub { font-size: 34px; color: var(--muted); margin-top: 10px; }
+.om-timeline { position: relative; display: flex; justify-content: space-between; margin-top: 56px; padding-top: 34px; }
+.om-timeline .tl-line { position: absolute; left: 14px; right: 14px; top: 13px; height: 3px; background: linear-gradient(90deg, var(--green), var(--blue), var(--violet)); opacity: .6; }
+.om-timeline .tl-item { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; font-size: 26px; color: var(--muted); }
+.om-timeline .tl-item b { font-family: var(--mono); font-weight: 400; font-size: 22px; color: var(--fg); }
+.om-timeline .tl-dot { position: absolute; top: -31px; left: 2px; width: 22px; height: 22px; border-radius: 50%; background: var(--bg); border: 3px solid var(--dim); }
+.om-timeline .tl-dot.g { border-color: var(--green); background: var(--green); }
+.om-timeline .tl-dot.v { border-color: var(--violet); background: var(--violet); }
+.om-timeline .tl-dot.b { border-color: var(--blue); background: var(--blue); }
+.om-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 56px; margin-top: 64px; align-items: center; }
+.om-stats { display: grid; grid-template-columns: repeat(4, auto); gap: 40px; }
+.om-stats .big { font-size: 84px; font-weight: 600; letter-spacing: -0.03em; line-height: 1; }
+.om-stats .lbl { font-size: 26px; color: var(--muted); margin-top: 10px; line-height: 1.2; }
+.om-stats small { font-family: var(--mono); font-size: 18px; color: var(--dim); }
+.om-quote { margin: 0; padding: 28px 34px; border-left: 5px solid var(--violet); background: var(--bg-2); border-radius: 0 18px 18px 0; font-size: 32px; line-height: 1.3; width: auto; box-shadow: none; font-style: normal; }
+.om-quote cite { display: block; margin-top: 16px; font-family: var(--mono); font-style: normal; font-size: 18px; color: var(--dim); }

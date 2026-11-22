@@ -8,7 +8,7 @@
 | 4 | Funciona offline | Nenhuma requisição externa. Os links de referência só abrem se clicados |
 | 5 | Sem cortes em 1920×1080 e 1366×768 | Verificado por screenshot (Chromium headless) |
 | 6 | Teclado e fullscreen | Padrão do Reveal (`→`, `←`, `F`, `S`, `Esc`) |
-| 7 | Omarchy só revelado no slide 12 | Slide 2 só mostra "MacBook Air 2013 · Omarchy Linux". Fotos do meetup só no 12 |
+| 7 | Omarchy só revelado no slide 12 | Slide 2 só mostra "MacBook Air 2013 · Omarchy Linux". A revelação no 12 é falada (notas); as fotos do meetup não são usadas |
 | 8 | Texto em pt-BR, sem placeholders | OK |
 | 9 | Fontes e afirmações sensíveis | Ver abaixo |
 | 10 | README com dev, deploy e palco | `README.md` |

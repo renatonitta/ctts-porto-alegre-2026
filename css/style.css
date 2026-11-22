@@ -200,3 +200,5 @@ html, body { background: var(--bg); }
 .quality .layers .layer { font-size: 50px; font-weight: 600; padding: 40px 24px 56px; border-radius: 22px; border-width: 2px; text-align: center; display: flex; flex-direction: column; justify-content: center; min-height: 320px; line-height: 1.15; }
 .quality .layers .layer small { font-size: 26px; margin-bottom: 18px; }
 .quality .layers .layer.review { box-shadow: 0 0 0 6px rgba(167,139,250,.14); }
+
+.reveal .finale-credit { font-family: var(--mono); font-size: 28px; color: var(--muted); margin-top: 60px; }

@@ -119,8 +119,8 @@ html, body { background: var(--bg); }
 .voice.s { border-top: 8px solid var(--blue); } .voice.t { border-top: 8px solid var(--green); } .voice.d { border-top: 8px solid var(--violet); }
 
 /* 08 — Rails World */
-.rw .bgphoto { position: absolute; inset: 0; background: url("../assets/photos/railsworld-stage.webp") center/cover no-repeat; opacity: .6; }
-.rw .bgphoto::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,8,12,.92) 0%, rgba(7,8,12,.7) 55%, rgba(7,8,12,.2) 100%); }
+.rw .bgphoto { position: absolute; inset: 0; background: url("../assets/photos/railsworld-stage.webp") center/cover no-repeat; opacity: .72; }
+.rw .bgphoto::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,8,12,.88) 0%, rgba(7,8,12,.62) 55%, rgba(7,8,12,.18) 100%); }
 .rw .content { width: 100%; position: relative; display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 64px; height: 100%; align-items: center; }
 .rw .q { font-size: 64px; font-weight: 600; line-height: 1.12; }
 .rw .asker { font-family: var(--mono); font-size: 30px; color: var(--muted); margin-top: 24px; }

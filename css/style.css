@@ -55,9 +55,9 @@ html, body { background: var(--bg); }
 .title-slide h1 { max-width: 1400px; }
 .title-slide .sub { font-size: 56px; margin-top: 24px; }
 .title-slide .meta { margin-top: 56px; font-family: var(--mono); font-size: 26px; color: var(--muted); }
-.remember-slide .remember { display: flex; align-items: center; gap: 80px; }
-.remember-slide .remember h2 { font-size: 104px; max-width: 1100px; }
-.remember-slide .laptop { width: 420px; flex: none; }
+.remember-slide .remember { display: flex; align-items: center; gap: 64px; }
+.remember-slide .remember h2 { font-size: 86px; white-space: nowrap; }
+.remember-slide .laptop { width: 340px; flex: none; }
 .remember-slide .bio { position: absolute; left: 120px; bottom: 90px; font-family: var(--mono); font-size: 20px; color: var(--dim); }
 .laptop { height: auto; }
 

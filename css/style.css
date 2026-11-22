@@ -194,3 +194,9 @@ html, body { background: var(--bg); }
 .pr-points .pt.b { border-left-color: var(--blue); } .pr-points .pt.v { border-left-color: var(--violet); }
 .pr-points .pt.a { border-left-color: var(--amber); } .pr-points .pt.g { border-left-color: var(--green); }
 .pr-points .ico { font-size: 52px; width: 64px; text-align: center; }
+
+/* 06 — qualidade: boxes em destaque */
+.quality .layers { margin-top: 56px; gap: 24px; }
+.quality .layers .layer { font-size: 50px; font-weight: 600; padding: 40px 24px 56px; border-radius: 22px; border-width: 2px; text-align: center; display: flex; flex-direction: column; justify-content: center; min-height: 320px; line-height: 1.15; }
+.quality .layers .layer small { font-size: 26px; margin-bottom: 18px; }
+.quality .layers .layer.review { box-shadow: 0 0 0 6px rgba(167,139,250,.14); }

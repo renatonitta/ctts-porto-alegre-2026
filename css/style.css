@@ -237,3 +237,11 @@ html, body { background: var(--bg); }
 .exp-flow .slack .hash { color: var(--amber); font-family: var(--mono); }
 .reveal .cadence { font-family: var(--mono); font-size: 30px; color: var(--muted); text-align: center; margin-top: 24px; }
 .exp-nums { justify-content: center; margin-top: 64px; }
+
+/* 11 — Omarchy simplificado */
+.reveal .slides section.omarchy { justify-content: center; padding-top: 90px; }
+.omarchy .om-stats { display: flex; gap: 120px; margin-top: 72px; }
+.omarchy .om-stats .big { font-size: 120px; }
+.omarchy .om-stats .lbl { font-size: 36px; }
+.omarchy .om-quote { margin-top: 72px; font-size: 44px; padding: 34px 44px; }
+.omarchy .om-quote cite { font-size: 28px; }

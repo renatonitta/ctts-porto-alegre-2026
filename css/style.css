@@ -245,3 +245,32 @@ html, body { background: var(--bg); }
 .omarchy .om-stats .lbl { font-size: 36px; }
 .omarchy .om-quote { margin-top: 72px; font-size: 44px; padding: 34px 44px; }
 .omarchy .om-quote cite { font-size: 28px; }
+
+/* ===== Tema claro (tecla L) ===== */
+html.light {
+  --bg: #ffffff;
+  --bg-2: #f1f3f8;
+  --line: #8a93a8;
+  --fg: #0b0d14;
+  --muted: #232a3b;
+  --dim: #3f4859;
+  --green: #047857;
+  --violet: #6d28d9;
+  --blue: #1d4ed8;
+  --amber: #b45309;
+  --red: #b91c1c;
+}
+html.light, html.light body { background: var(--bg); }
+html.light .reveal-viewport { background: var(--bg); }
+html.light .reveal .progress { background: rgba(0,0,0,.1); }
+html.light .process .zoom-link { background:
+  linear-gradient(to bottom right, transparent calc(50% - 2px), rgba(4,120,87,.85) 50%, transparent calc(50% + 2px)) left / 50% 100% no-repeat,
+  linear-gradient(to bottom left, transparent calc(50% - 2px), rgba(4,120,87,.85) 50%, transparent calc(50% + 2px)) right / 50% 100% no-repeat; }
+html.light .process .substeps { background: rgba(4,120,87,.05); box-shadow: none; }
+html.light .reveal .flow .step.code.visible { box-shadow: 0 0 0 6px rgba(4,120,87,.15); }
+html.light .process .sub.hl, html.light .quality .layers .layer.review { box-shadow: 0 0 0 6px rgba(109,40,217,.15); }
+html.light .exp-flow .msg { background: #fff; }
+html.light .rw .bgphoto { opacity: .55; }
+html.light .rw .bgphoto::after { background: linear-gradient(90deg, rgba(255,255,255,.94) 0%, rgba(255,255,255,.75) 55%, rgba(255,255,255,.25) 100%); }
+html.light .rw .photo { box-shadow: 0 30px 80px rgba(0,0,0,.25); }
+html.light .voice, html.light .tier, html.light .layers .layer, html.light .pr-points .pt, html.light .om-quote, html.light .exp-flow .node, html.light .process .sub, html.light .flow .step { box-shadow: none; }

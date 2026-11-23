@@ -43,8 +43,10 @@ URL: https://renatonitta.github.io/ctts-porto-alegre-2026/
 | `S` | notas do palestrante + cronômetro (janela separada) |
 | `Esc` / `O` | visão geral dos slides |
 | `B` / `.` | tela preta (pausa) |
+| `L` | alterna tema escuro / claro |
 
 - Abrir a apresentação pelo servidor local (`python3 -m http.server`) no MacBook. Depois do primeiro carregamento ela funciona sem internet.
 - Apertar `S` antes de começar e arrastar a janela de notas para a tela do notebook.
 - Os slides 7 e 8 têm revelações em etapas. Cada `→` mostra a próxima.
 - O slide 13 traz as **Referências** e os contatos. Dá para deixá-lo na tela durante as perguntas.
+- **Tema claro:** aperte `L` para alternar entre escuro e claro, caso o projetor não fique bom. A escolha fica salva no navegador. Também dá para abrir direto no claro com `?theme=light` na URL.

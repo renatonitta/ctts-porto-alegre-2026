@@ -28,10 +28,10 @@
 <section class="remember-slide" data-timing="60">
   <div class="remember">
     <svg class="laptop" viewBox="0 0 300 190" role="img" aria-label="Ilustração de um MacBook Air">
-      <rect x="40" y="10" width="220" height="140" rx="10" fill="none" stroke="#d6dbe6" stroke-width="4"/>
+      <rect x="40" y="10" width="220" height="140" rx="10" fill="none" style="stroke:var(--muted)" stroke-width="4"/>
       <rect x="54" y="24" width="192" height="112" rx="3" fill="#121624"/>
-      <path d="M10 160 H290 L272 180 H28 Z" fill="none" stroke="#d6dbe6" stroke-width="4" stroke-linejoin="round"/>
-      <line x1="130" y1="160" x2="170" y2="160" stroke="#07080c" stroke-width="6"/>
+      <path d="M10 160 H290 L272 180 H28 Z" fill="none" style="stroke:var(--muted)" stroke-width="4" stroke-linejoin="round"/>
+      <line x1="130" y1="160" x2="170" y2="160" style="stroke:var(--bg)" stroke-width="6"/>
     </svg>
     <div>
       <h2>MacBook Air 2013 <span class="dim">·</span> <span class="grad">Omarchy Linux</span></h2>
@@ -113,19 +113,19 @@
   <svg class="chart" viewBox="0 0 1680 600" role="img" aria-label="Gráfico ilustrativo, sem dados: o volume de código gerado cresce rapidamente enquanto a capacidade humana de revisão permanece quase estável">
     <defs>
       <linearGradient id="gap" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#fcd34d" stop-opacity=".4"/>
-        <stop offset="1" stop-color="#fcd34d" stop-opacity=".08"/>
+        <stop offset="0" style="stop-color:var(--amber)" stop-opacity=".4"/>
+        <stop offset="1" style="stop-color:var(--amber)" stop-opacity=".08"/>
       </linearGradient>
-    <line x1="40" y1="540" x2="1640" y2="540" stroke="#4a5577" stroke-width="3"/>
-    <line x1="40" y1="40" x2="40" y2="540" stroke="#4a5577" stroke-width="3"/>
+    <line x1="40" y1="540" x2="1640" y2="540" style="stroke:var(--line)" stroke-width="3"/>
+    <line x1="40" y1="40" x2="40" y2="540" style="stroke:var(--line)" stroke-width="3"/>
       <clipPath id="aboveRev"><path d="M60 430 C 500 425, 1000 410, 1360 394 L 1360 0 L 60 0 Z"/></clipPath>
     </defs>
     <path clip-path="url(#aboveRev)" d="M60 500 C 500 480, 860 380, 1360 70 L 1360 540 L 60 540 Z" fill="url(#gap)"/>
     <path class="rev draw" d="M60 430 C 500 425, 1000 410, 1360 394" fill="none" stroke-width="8" stroke-linecap="round"/>
     <path class="gen draw" d="M60 500 C 500 480, 860 380, 1360 70" fill="none" stroke-width="8" stroke-linecap="round"/>
-    <text x="1385" y="82" fill="#5ef59a">Código gerado</text>
-    <text x="1385" y="405" fill="#c4b5fd">Revisão humana</text>
-    <text x="1120" y="330" fill="#fcd34d" text-anchor="middle">fila de revisão</text>
+    <text x="1385" y="82" style="fill:var(--green)">Código gerado</text>
+    <text x="1385" y="405" style="fill:var(--violet)">Revisão humana</text>
+    <text x="1120" y="330" style="fill:var(--amber)" text-anchor="middle">fila de revisão</text>
   </svg>
   <aside class="notes">
     Agentes conseguem produzir alterações em grande volume — dezenas, até centenas de PRs por dia. (Gráfico ilustrativo, sem dados.)
@@ -311,6 +311,18 @@
 <script src="vendor/reveal/reveal.js"></script>
 <script src="vendor/reveal/plugin/notes/notes.js"></script>
 <script>
+  // Tema claro/escuro: tecla L ou ?theme=light na URL. Fica salvo no navegador.
+  function applyTheme(t) { document.documentElement.classList.toggle('light', t === 'light'); }
+  function toggleTheme() {
+    var t = document.documentElement.classList.contains('light') ? 'dark' : 'light';
+    applyTheme(t);
+    try { localStorage.setItem('ctts-theme', t); } catch (e) {}
+  }
+  (function () {
+    var q = new URLSearchParams(location.search).get('theme'), saved = null;
+    try { saved = localStorage.getItem('ctts-theme'); } catch (e) {}
+    applyTheme(q || saved || 'dark');
+  })();
   Reveal.initialize({
     width: 1920,
     height: 1080,
@@ -328,7 +340,8 @@
     display: 'flex',
     backgroundTransition: 'fade',
     totalTime: 1200,
-    plugins: [ RevealNotes ]
+    plugins: [ RevealNotes ],
+    keyboard: { 76: toggleTheme }   // tecla L: alterna claro/escuro
   });
 </script>
 </body>

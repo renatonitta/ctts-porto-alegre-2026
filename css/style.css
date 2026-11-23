@@ -270,7 +270,7 @@ html.light .process .substeps { background: rgba(4,120,87,.05); box-shadow: none
 html.light .reveal .flow .step.code.visible { box-shadow: 0 0 0 6px rgba(4,120,87,.15); }
 html.light .process .sub.hl, html.light .quality .layers .layer.review { box-shadow: 0 0 0 6px rgba(109,40,217,.15); }
 html.light .exp-flow .msg { background: #fff; }
-html.light .rw .bgphoto { opacity: .55; }
-html.light .rw .bgphoto::after { background: linear-gradient(90deg, rgba(255,255,255,.94) 0%, rgba(255,255,255,.75) 55%, rgba(255,255,255,.25) 100%); }
+html.light .rw .bgphoto { opacity: .9; }
+html.light .rw .bgphoto::after { background: linear-gradient(90deg, rgba(255,255,255,.86) 0%, rgba(255,255,255,.55) 55%, rgba(255,255,255,.08) 100%); }
 html.light .rw .photo { box-shadow: 0 30px 80px rgba(0,0,0,.25); }
 html.light .voice, html.light .tier, html.light .layers .layer, html.light .pr-points .pt, html.light .om-quote, html.light .exp-flow .node, html.light .process .sub, html.light .flow .step { box-shadow: none; }

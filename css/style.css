@@ -222,3 +222,18 @@ html, body { background: var(--bg); }
 .om-stats small { font-family: var(--mono); font-size: 18px; color: var(--dim); }
 .om-quote { margin: 0; padding: 28px 34px; border-left: 8px solid var(--violet); background: var(--bg-2); border-radius: 0 18px 18px 0; font-size: 36px; line-height: 1.3; width: auto; box-shadow: none; font-style: normal; }
 .om-quote cite { display: block; margin-top: 16px; font-family: var(--mono); font-style: normal; font-size: 24px; color: var(--dim); }
+
+/* 10 — experimento: fluxo simplificado com Slack */
+.exp-flow { display: grid; grid-template-columns: 1fr 1.1fr 1fr; align-items: center; gap: 28px; margin-top: 56px; }
+.exp-flow .node { background: var(--bg-2); border: 3px solid var(--line); border-radius: 22px; padding: 40px 32px; text-align: center; }
+.exp-flow .node.b { border-color: var(--blue); } .exp-flow .node.v { border-color: var(--violet); }
+.exp-flow .node .who { font-size: 52px; font-weight: 600; line-height: 1.1; }
+.exp-flow .node .what { font-size: 34px; color: var(--muted); margin-top: 10px; }
+.exp-flow .link { display: flex; flex-direction: column; align-items: center; gap: 18px; }
+.exp-flow .msg { font-size: 34px; font-weight: 600; padding: 10px 26px; border-radius: 999px; background: rgba(255,255,255,.06); border: 2px solid var(--line); white-space: nowrap; }
+.exp-flow .msg.fwd { color: var(--blue); border-color: var(--blue); }
+.exp-flow .msg.back { color: var(--violet); border-color: var(--violet); }
+.exp-flow .slack { font-size: 44px; font-weight: 600; color: var(--fg); display: flex; align-items: center; gap: 10px; }
+.exp-flow .slack .hash { color: var(--amber); font-family: var(--mono); }
+.reveal .cadence { font-family: var(--mono); font-size: 30px; color: var(--muted); text-align: center; margin-top: 24px; }
+.exp-nums { justify-content: center; margin-top: 64px; }

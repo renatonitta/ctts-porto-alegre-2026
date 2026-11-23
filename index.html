@@ -217,36 +217,16 @@
 <!-- 10 — Experimento: agentes revisando agentes (3:00) -->
 <section data-timing="180">
   <div class="kicker"><span class="n">10</span> Experimento: agentes revisando agentes</div>
-  <svg class="pipe" viewBox="0 0 1680 300" role="img" aria-label="Pipeline do experimento: agentes produtores geram PRs, agentes revisores revisam, validações rodam e as mudanças vão para produção, a cada 30 minutos">
-    <defs>
-      <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#aab2c5"/></marker>
-    </defs>
-    <path id="track" d="M260 150 H1420" fill="none"/>
-    <g stroke="#aab2c5" stroke-width="3" marker-end="url(#arr)">
-      <line x1="262" y1="150" x2="350" y2="150"/><line x1="617" y1="150" x2="705" y2="150"/>
-      <line x1="972" y1="150" x2="1060" y2="150"/><line x1="1327" y1="150" x2="1415" y2="150"/>
-    </g>
-    <g>
-      <rect class="box" x="0" y="90" width="260" height="120" rx="16" style="stroke:#93c5fd"/>
-      <text x="130" y="145" text-anchor="middle">Agentes</text><text x="130" y="180" text-anchor="middle">produtores</text>
-      <rect class="box" x="355" y="90" width="260" height="120" rx="16"/>
-      <text x="485" y="160" text-anchor="middle">PRs</text>
-      <rect class="box" x="710" y="90" width="260" height="120" rx="16" style="stroke:#c4b5fd"/>
-      <text x="840" y="145" text-anchor="middle">Agentes</text><text x="840" y="180" text-anchor="middle">revisores</text>
-      <rect class="box" x="1065" y="90" width="260" height="120" rx="16"/>
-      <text x="1195" y="160" text-anchor="middle">Validações</text>
-      <rect class="box" x="1420" y="90" width="260" height="120" rx="16" style="stroke:#5ef59a"/>
-      <text x="1550" y="160" text-anchor="middle">Produção</text>
-    </g>
-    <text class="small" x="130" y="245" text-anchor="middle">do colega</text>
-    <text class="small" x="840" y="245" text-anchor="middle">meus</text>
-    <text class="small" x="840" y="50" text-anchor="middle">↻ automações a cada 30 min</text>
-    <g>
-      <circle class="packet" r="9"><animateMotion dur="4s" repeatCount="indefinite" begin="0s"><mpath href="#track"/></animateMotion></circle>
-      <circle class="packet" r="9"><animateMotion dur="4s" repeatCount="indefinite" begin="1.33s"><mpath href="#track"/></animateMotion></circle>
-      <circle class="packet" r="9"><animateMotion dur="4s" repeatCount="indefinite" begin="2.66s"><mpath href="#track"/></animateMotion></circle>
-    </g>
-  </svg>
+  <div class="exp-flow" role="img" aria-label="Os agentes do colega escrevem PRs e avisam pelo Slack; os meus agentes revisam e respondem pelo Slack; automações a cada 30 minutos">
+    <div class="node b"><div class="who">Agentes do colega</div><div class="what">escrevem os PRs</div></div>
+    <div class="link">
+      <div class="msg fwd">PR pronto <span>→</span></div>
+      <div class="slack"><span class="hash">#</span> Slack</div>
+      <div class="msg back"><span>←</span> revisão feita</div>
+    </div>
+    <div class="node v"><div class="who">Meus agentes</div><div class="what">revisam os PRs</div></div>
+  </div>
+  <p class="cadence">↻ automações a cada 30 min</p>
   <div class="exp-nums">
     <div><div class="big g">60+</div><div class="lbl">PRs em produção</div></div>
     <div><div class="big">2</div><div class="lbl">dias</div></div>
@@ -255,6 +235,7 @@
   <aside class="notes">
     Esta semana fiz um experimento com um colega. Ambos colocamos automações rodando a cada 30 minutos.
     Os agentes dele produziam PRs; os meus agentes revisavam.
+    Quando um agente terminava, mandava mensagem para o outro pelo Slack: "PR pronto" → revisão → "revisão feita" → ajustes/merge.
     Em 2 dias, mais de 60 PRs chegaram à produção — média de cerca de 30 por dia. Humanamente complicado de fazer.
     CUIDADO: volume não comprova qualidade. Não temos métricas de bugs, complexidade dos PRs ou intervenções humanas.
     Não alegar ausência de incidentes nem revisão 100% autônoma. Clímax técnico — pausa nos números. (3:00)

@@ -274,3 +274,19 @@ html.light .rw .bgphoto { opacity: .9; }
 html.light .rw .bgphoto::after { background: linear-gradient(90deg, rgba(255,255,255,.86) 0%, rgba(255,255,255,.55) 55%, rgba(255,255,255,.08) 100%); }
 html.light .rw .photo { box-shadow: 0 30px 80px rgba(0,0,0,.25); }
 html.light .voice, html.light .tier, html.light .layers .layer, html.light .pr-points .pt, html.light .om-quote, html.light .exp-flow .node, html.light .process .sub, html.light .flow .step { box-shadow: none; }
+
+/* Destaque forte: PR review (slide 3) e Revisão (slide 5) */
+:root { --on-accent: #0b0d14; }
+html.light { --on-accent: #ffffff; }
+.process .sub.hl,
+.quality .layers .layer.review {
+  background: var(--violet);
+  border-color: var(--violet);
+  color: var(--on-accent);
+  transform: scale(1.1);
+  box-shadow: 0 0 0 8px rgba(196,181,253,.25), 0 24px 60px rgba(196,181,253,.25);
+  position: relative; z-index: 1;
+}
+.quality .layers .layer.review small { color: var(--on-accent); opacity: .8; }
+html.light .process .sub.hl,
+html.light .quality .layers .layer.review { box-shadow: 0 0 0 8px rgba(109,40,217,.18), 0 24px 60px rgba(109,40,217,.25); }

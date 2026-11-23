@@ -1,7 +1,7 @@
 # Agentes de IA no processo de desenvolvimento de software
 ### A qualidade e a velocidade
 
-Apresentação de Renato Nitta (@renatonitta) no CTTS Porto Alegre 2026. São 13 slides, cerca de 20 minutos.
+Apresentação de Renato Nitta (@renatonitta) no CTTS Porto Alegre 2026. São 12 slides, cerca de 20 minutos.
 
 Site estático com [Reveal.js 5.1.0](https://revealjs.com) incluído no repositório (`vendor/`). Não tem build, Node, nem dependência de rede: fontes, scripts e fotos são todos locais.
 
@@ -47,6 +47,6 @@ URL: https://renatonitta.github.io/ctts-porto-alegre-2026/
 
 - Abrir a apresentação pelo servidor local (`python3 -m http.server`) no MacBook. Depois do primeiro carregamento ela funciona sem internet.
 - Apertar `S` antes de começar e arrastar a janela de notas para a tela do notebook.
-- Os slides 7 e 8 têm revelações em etapas. Cada `→` mostra a próxima.
-- O slide 13 traz as **Referências** e os contatos. Dá para deixá-lo na tela durante as perguntas.
+- Os slides 6 e 7 têm revelações em etapas. Cada `→` mostra a próxima.
+- O slide 12 traz as **Referências** e os contatos. Dá para deixá-lo na tela durante as perguntas.
 - **Tema claro:** aperte `L` para alternar entre escuro e claro, caso o projetor não fique bom. A escolha fica salva no navegador. Também dá para abrir direto no claro com `?theme=light` na URL.
